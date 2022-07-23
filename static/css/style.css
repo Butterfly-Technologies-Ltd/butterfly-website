@@ -131,6 +131,10 @@ h3 {font-size: var(--fs-h3);}
     text-decoration: none;
 }
 
+.nav__items {
+    color: var(--clr-light);
+}
+
 .nav__link:hover {
     color: var(--clr-accent);
 }
