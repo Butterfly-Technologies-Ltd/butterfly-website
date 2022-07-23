@@ -53,7 +53,7 @@ header {
 }
 
 body {
-    background: var(--clr-dark);
+    background: var(--clr-light);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
