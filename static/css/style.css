@@ -32,6 +32,7 @@
         --fs-h1: 4.5rem;
         --fs-h2: 4rem;
         --fs-h3: 1.5rem;
+        --fs-h4: 0.8rem;
         --fs-body: 1.125rem;
     }
 }
@@ -337,7 +338,14 @@ h3 {font-size: var(--fs-h3);}
 }
 
 .contact-two {
+    font-size: 1.6rem;
     color: var(--clr-accent);
+    margin-bottom: 0.2em;
+}
+
+.section__subtitle--para {
+    font-size: 0.8rem;
+    margin-bottom: 1em;
 }
 
 @media screen and (min-width: 1050px) {
@@ -347,11 +355,18 @@ h3 {font-size: var(--fs-h3);}
     }
 
     .section__subtitle--para {
-        font-size: var(--fs-body);
+        font-size: var(--fs-h4);
+        margin-bottom: 0;
     }
 
     .section__subtitle--contact {
         font-size: var(--fs-h2);
+        margin-bottom: 0.3em;
+    }
+
+    .contact-two {
+        font-size: 3rem;
+        margin-bottom: 0em;
     }
 
 }
@@ -364,9 +379,9 @@ h3 {font-size: var(--fs-h3);}
 
 #contact .join-banner {
     width: 100vw;
-    height: 100%;
+    height: 90%;
     position: relative;
-    padding: 120px 40px;
+    padding: 100px;
     background-image: url("../images/team/the-team3.png");
     background-position: top;
     background-repeat: no-repeat;
@@ -392,8 +407,6 @@ h3 {font-size: var(--fs-h3);}
 
 #contact .page-content {
     height: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 #contact li {
@@ -405,7 +418,7 @@ h3 {font-size: var(--fs-h3);}
 
 #contact .social-link i {
     color: var(--clr-dark);
-    margin-inline-start: 1.1em;
+    margin-inline-start: 0.5em;
     font-size: 2rem;
     text-decoration: none;
 }
@@ -428,15 +441,54 @@ h3 {font-size: var(--fs-h3);}
     font-weight: 400;
 }
 
+.btn-join {
+    background-color: transparent;
+    border: 2px solid var(--clr-light);
+    box-sizing: border-box;
+    color: var(--clr-light);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    padding: 20px 40px;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-join:hover,
+.btn-join:active {
+    outline: 0;
+}
+
+.btn-join:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-join:before {
+    background-color: var(--clr-light);
+    content: "";
+    position: absolute;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+}
+
+.btn-join:hover:before {
+    background-color: var(--clr-accent);
+    opacity: 0.6;
+}
+
 @media screen and (min-width: 1050px) {
     #contact .social-link i {
-        margin-top: 15px;
-        margin-inline-start: 1.6em;
+        margin-top: 0;
+        margin-inline-start: 0.85em;
     }
 
-    #contact .page-content {
+    #contact .join-banner {
         height: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 140px;
     }
 }
