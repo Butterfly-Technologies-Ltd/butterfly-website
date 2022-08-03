@@ -13,7 +13,7 @@
     <header>
         
         <div class="logo">
-            <img src="static/images/fullLogo.png" alt="" class="logo__img">
+            <img src="static/images/logo/fullLogo.png" alt="" class="logo__img">
         </div>
         <!--<h2 class="logo"><strong>butterfly.</strong></h2>-->
         
@@ -22,12 +22,10 @@
         </button>
         <nav class="navFunc">
             <ul class="nav__list">
-                <li class="nav__items"><a href="#" class="nav__link">home</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">our mission</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">the team</a></li>
-                <li class="nav__items"><a href="#" class="nav__link">contact</a></li>
-                <li class="nav__items"><a class="nav__link" href="https://www.instagram.com/warwickuni2021/"><i class="fa-brands fa-instagram-square"></i></a></li>
-                <li class="nav__items"><a class="nav__link" href="https://www.linkedin.com/in/zainmobarik/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="nav__items"><a href="#home" class="nav__link">home</a></li>
+                <li class="nav__items"><a href="#our-story" class="nav__link">our story</a></li>
+                <li class="nav__items"><a href="#the-team" class="nav__link">the team</a></li>
+                <li class="nav__items"><a href="#contact" class="nav__link">contact</a></li>
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -35,10 +33,47 @@
         </label>
     </header>
 
-    <div class="content">
-        <div>
-            <p class="section__subtitle section__subtitle--intro">DISCLAIMER: Site is still under construction. Coming soon to freshers at Warwick.</p>
-        </div>
+    <div class="container">
+        <section class="home" id="home">
+            <div class="home-content">
+                <div>
+                    <p class="section__subtitle section__subtitle--intro">DISCLAIMER: Site is still under construction. Coming soon to freshers at Warwick.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="our-story" id="our-story">
+            <div class="story-content">
+                
+            </div>
+        </section>
+    
+        <section class="the-team" id="the-team">
+            <div class="team-content">
+                
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact" id="contact">
+            <div class="join-banner">
+                <div class="banner-overlay"></div>
+                <div class="join-banner-text">
+                    <h3 class="section__subtitle section__subtitle--contact">providing real social experiences.</h3>
+                    <a href="https://www.warwicksu.com/societies-sports/societies/45928/"><button class="join-btn">Join us</button></a>
+                </div>
+            </div>
+            <div class="page-content">
+                <h3 class="section__subtitle section__subtitle--contact">Contact Us</h3>
+                <p class="section__subtitle section__subtitle--para">Butterfly Technologies, Warwick University,<br> Gibbet Hill Rd, Coventry,<br> CV4 7ES, United Kingdom</p>
+                <ul>
+                    <li><a class="social-link" href="mailto:admin@butterfly-social.com"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a class="social-link" href="https://www.linkedin.com/zainmobarik/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a class="social-link" href="https://www.instagram.com/zain.mbrk/"><i class="fa-brands fa-instagram-square"></i></a></li>
+                </ul>
+                <div class="copyright">&copy; Butterfly Technologies</div>
+            </div>
+        </section>
     </div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
