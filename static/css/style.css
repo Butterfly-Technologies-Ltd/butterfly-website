@@ -328,20 +328,27 @@ h3 {font-size: var(--fs-h3);}
     opacity: 80%;
 }
 
-.wrapper > div > h3, h1 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.wrapper > div:nth-child(even) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.wrapper > div > h1 {
+.subtitle-news {
+    text-align: center;
+}
+
+.news-sub-one {
+    font-size: 2rem;
+}
+
+.news-sub-two {
     color: var(--clr-light);
 }
 
-
 .news-img {
-    margin-top: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     width: 80%;
     border-radius: 15px;
     margin-left: auto;
@@ -408,7 +415,13 @@ h3 {font-size: var(--fs-h3);}
         margin-bottom: 0em;
     }
 
+    .news-sub-one {
+        font-size: 3rem;
+    }
+
 }
+
+/* TEAM */
 
 /* CONTACT */
 
