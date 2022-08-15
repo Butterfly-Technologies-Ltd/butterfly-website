@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Butterfly</title>
 </head>
 <body>
@@ -60,7 +61,47 @@
     
         <section class="the-team" id="the-team">
             <div class="team-content">
-                
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="static/images/team/zain.jpg" class="swiper-slide-img">
+                            <div class="swiper-text">
+                                <h3>JOSH OKUSI</h3>
+                                <p>CEO</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/images/team/zain.jpg" class="swiper-slide-img">
+                            <div class="swiper-text">
+                                <h3>Alex Reid</h3>
+                                <p>CFO</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/images/team/zain.jpg" class="swiper-slide-img">
+                            <div class="swiper-text">
+                                <h3>Zain Mobarik</h3>
+                                <p>Legend</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/images/team/zain.jpg" class="swiper-slide-img">
+                            <div class="swiper-text">
+                                <h3>Tenam Surname</h3>
+                                <p>Marketing</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="static/images/team/zain.jpg" class="swiper-slide-img">
+                            <div class="swiper-text">
+                                <h3>Maria Surname</h3>
+                                <p>Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </section>
 
@@ -91,8 +132,28 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="static/js/scroll.js"></script>
     <script src="static/js/nav.js"></script>
-    <script src="static/js/swiper-bundle.min.js"></script>
-    <script src="static/js/swipers.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var $bottomSlide = null; 
+        var $bottomSlideContent = null;
+        var swiper = new Swiper(".swiper-container", {
+            direction: 'horizontal',
+            spaceBetween: 10,
+            slidesPerView: 3,
+            centeredSlides: true,
+            roundLengths: true,
+            loop: true,
+            loopAdditionalSlides: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    </script>
 
 </body>
 </html>
