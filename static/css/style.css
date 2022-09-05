@@ -461,7 +461,10 @@ h3 {font-size: var(--fs-h3);}
 }
 
 /* TEAM */
-
+.the-team{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 .team-content {
     width: 80vw;
     height: 60vh;
