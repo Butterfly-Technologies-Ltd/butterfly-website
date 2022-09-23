@@ -416,6 +416,16 @@ h3 {font-size: var(--fs-h3);}
     margin-bottom: 1em;
 }
 
+.news ul, li {
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 850px) {
+    .news ul, li {
+        font-size: 0.9rem;
+    }
+}
+
 @media screen and (min-width: 1050px) {
     .section__subtitle {
         margin: auto;
@@ -439,6 +449,10 @@ h3 {font-size: var(--fs-h3);}
 
     .news-sub-one {
         font-size: 3rem;
+    }
+
+    .news ul, li {
+        font-size: 1.2rem;
     }
 
 }
